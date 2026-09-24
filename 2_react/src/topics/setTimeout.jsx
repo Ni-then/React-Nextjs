@@ -15,10 +15,7 @@ const App = () => {
 
     return (
         <div>
-
             {data.map((p) => <Todo title={p.title} />)}
-
-
         </div>
     )
 }
