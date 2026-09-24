@@ -2,27 +2,21 @@ import axios from "axios"
 import { useState } from "react";
 
 const App = () => {
-  const [data,setData] = useState([])
-  // jb bhe first time component render hota hai toh , woh by default values ko he render krta hai , so if later we update the value , so then woh show nahi hogi ,
-  // bcz react only re-render the component when state-variable change
+  // means setTimput kra yeh sirf yeh baar he chal;ta hai but mene esmeh state variable data use kra so abh first time add huya new_entrty so mera data wala state variable change huya whihc cause re - render of App.jsx so abh jb yeh component re - render hoga, toh setTimeout phior chalega and this loops begins and begin to solve this we need to understand useEffectr kya meen sb sahi kaha
+  const [data,setData] = useState([
+    {title:"this is title"}
+  ])
+  setTimeout(()=>{
+    setData([...data,{title:"new_entry"}])
+  },1000)
 
-  // (code without state variable)
-  // let data ; 
-  // axios.get("https://jsonplaceholder.typicode.com/todos")
-  // .then(res=>{
-  //   data = res.data;
-  // })
-  // console.log("this is data",data)
-  // (code with state variable)
-  axios.get("https://jsonplaceholder.typicode.com/todos")
-  .then(res=>{
-    setData(res.data)
-  })
+  console.log(data[0].title)
 
   return (
     <div>
-      {/* {JSON.stringify(data)} */}
-      {data.map((p) => <Todo key={p.id} userId={p?.userId} title={p?.title} />)}
+
+      {data.map((p) => <Todo title={p.title} />)}
+      
 
     </div>
   )
@@ -30,7 +24,6 @@ const App = () => {
 function Todo(props){
   return (
     <div>
-      <h1 className="font-bod text-green-500">{props.userId}</h1>
       <p className="font-thin text-yellow-500">{props.title}</p>
     </div>
   )
