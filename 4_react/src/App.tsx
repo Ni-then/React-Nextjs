@@ -16,7 +16,7 @@ const App = () => {
 function Essay(){
   const divRef = useRef(null)
   return(
-    
+
     <div>
       {/* 
         <div id = "essay">
@@ -230,6 +230,7 @@ function Essay(){
       <button onClick={()=>{
         // const div = document.getElementById("essay");
         // div.scrollTop = 0;
+        
         divRef.current.scrollTop = 0;
       }}>Take me to top</button>
     </div>
