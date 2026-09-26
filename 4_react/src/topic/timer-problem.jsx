@@ -28,6 +28,7 @@ const App = () => {
         clearInterval(interval)
 
     }
+    // whole problem : jaise jaise timer ki value update ho rahi hai means 1, 2, 3 ,4 ---- so har baar mera component re-render ho raha hai
 
     return (
         <div>
