@@ -8,7 +8,7 @@ const App = () => {
   // btn click krne pr function chalega
   // setInterval use kra
   // intial value timer ki 0 
-  // but then setTImer(timer + 1);// state -- variable change , so re-render 
+  // but then (timer + 1);setTImer// state -- variable change , so re-render 
   // pr mere timer ki value update hho gayi hhai now its 1 
   // but problem is mera abhi bhe old setInterval, chal raha hai, jiske under timer ki old value hai whihc is 0, na ki 1 
   // is liye timer is stuck on 1 second ??
