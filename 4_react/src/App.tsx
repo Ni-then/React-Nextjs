@@ -16,6 +16,7 @@ const App = () => {
 function Essay(){
   const divRef = useRef(null)
   return(
+    
     <div>
       {/* 
         <div id = "essay">
