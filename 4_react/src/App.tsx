@@ -230,8 +230,9 @@ function Essay(){
       <button onClick={()=>{
         // const div = document.getElementById("essay");
         // div.scrollTop = 0;
-        
+
         divRef.current.scrollTop = 0;
+        // 9 : 36 (when i reach to the 99 commit )
       }}>Take me to top</button>
     </div>
   )
