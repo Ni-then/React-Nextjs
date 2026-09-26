@@ -1,32 +1,201 @@
-import { useState } from "react"
+\import React from 'react'
 
 const App = () => {
-  const [interval , setIntervalID] = useState()
-  // why its stuck in 1second
-  // timer is state var --> so means jb state var change hoga re-render bhe hoga ,  (re-render)-_> cause
-  // timer ki value update ho gayi phle 0 thi aabh 1 hai 
-  // but problem is , mera abhi bhe old SetINtervaql he chal raha hai , means uske under timer ki value bhe old wali he hai which is zero , so even we are trying to update the timer but old setTImeut use ho raha hai , jsike wajha seh , timer ki value bhe old wali use ho rahi hai 
-  const [timer,setTimer] = useState(0)
-  function StartWatch(){
-    let i = setInterval(()=>{
-      // setTimer(timer+1)
-      // setTimer(s=>s+1);// s: latest state variable hai uski state deta hai 
-      setTimer((s)=>{
-        return s+1;
-      })
-    },1000)
-    setIntervalID(i);
-  }
-  function stopWatch(){
-    clearInterval(interval)
-  }
   return (
     <div>
-      <button onClick={() => StartWatch()}>Start watch</button>
-      <button onClick={()=>stopWatch()}>Stop watch</button>
-      <p>
-        {timer}s
-      </p>
+      PinnedLoading
+      IND-Wallet Public
+      IND Wallet is open source wallet apps from which you can done onRampTxns , p2p transfers , merchant app , with fake hdfc banking api &wehbhook (unstable & no security)
+
+      TypeScript
+
+      93 contributions in the last year
+      Skip to contributions year list
+      Contribution Graph
+      Day of Week	SeptemberSep	OctoberOct	NovemberNov	DecemberDec	JanuaryJan	FebruaryFeb	MarchMar	AprilApr	MayMay	JuneJun	JulyJul	AugustAug	SeptemberSep
+      SundaySun
+      MondayMon
+      TuesdayTue
+      WednesdayWed
+      ThursdayThu
+      FridayFri
+      SaturdaySat
+      Learn how we count contributions
+      Less
+      No contributions.
+      Low contributions.
+      Medium-low contributions.
+      Medium-high contributions.
+      High contributions.
+      More
+      Contribution activity
+      September 2026
+      Opened their first issue on GitHub in Ni-then/IND-Wallet Public
+      Sep 14
+      Congratulations on your first issue!
+      First issue
+      Resolve Next.js Development Server Failure Caused by Turbopack and SWC Native Binding Issues on Windows
+      Loading
+      Seeing something unexpected? Take a look at the GitHub profile guide.
+
+      2026
+      Footer
+      © 2026 GitHub, Inc.
+      Footer navigation
+      Terms
+      Privacy
+      Security
+      Status
+      Community
+      Docs
+      Contact
+      Manage cookies
+
+
+      PinnedLoading
+      IND-Wallet Public
+      IND Wallet is open source wallet apps from which you can done onRampTxns , p2p transfers , merchant app , with fake hdfc banking api &wehbhook (unstable & no security)
+
+      TypeScript
+
+      93 contributions in the last year
+      Skip to contributions year list
+      Contribution Graph
+      Day of Week	SeptemberSep	OctoberOct	NovemberNov	DecemberDec	JanuaryJan	FebruaryFeb	MarchMar	AprilApr	MayMay	JuneJun	JulyJul	AugustAug	SeptemberSep
+      SundaySun
+      MondayMon
+      TuesdayTue
+      WednesdayWed
+      ThursdayThu
+      FridayFri
+      SaturdaySat
+      Learn how we count contributions
+      Less
+      No contributions.
+      Low contributions.
+      Medium-low contributions.
+      Medium-high contributions.
+      High contributions.
+      More
+      Contribution activity
+      September 2026
+      Opened their first issue on GitHub in Ni-then/IND-Wallet Public
+      Sep 14
+      Congratulations on your first issue!
+      First issue
+      Resolve Next.js Development Server Failure Caused by Turbopack and SWC Native Binding Issues on Windows
+      Loading
+      Seeing something unexpected? Take a look at the GitHub profile guide.
+
+      2026
+      Footer
+      © 2026 GitHub, Inc.
+      Footer navigation
+      Terms
+      Privacy
+      Security
+      Status
+      Community
+      Docs
+      Contact
+      Manage cookies
+
+
+      PinnedLoading
+      IND-Wallet Public
+      IND Wallet is open source wallet apps from which you can done onRampTxns , p2p transfers , merchant app , with fake hdfc banking api &wehbhook (unstable & no security)
+
+      TypeScript
+
+      93 contributions in the last year
+      Skip to contributions year list
+      Contribution Graph
+      Day of Week	SeptemberSep	OctoberOct	NovemberNov	DecemberDec	JanuaryJan	FebruaryFeb	MarchMar	AprilApr	MayMay	JuneJun	JulyJul	AugustAug	SeptemberSep
+      SundaySun
+      MondayMon
+      TuesdayTue
+      WednesdayWed
+      ThursdayThu
+      FridayFri
+      SaturdaySat
+      Learn how we count contributions
+      Less
+      No contributions.
+      Low contributions.
+      Medium-low contributions.
+      Medium-high contributions.
+      High contributions.
+      More
+      Contribution activity
+      September 2026
+      Opened their first issue on GitHub in Ni-then/IND-Wallet Public
+      Sep 14
+      Congratulations on your first issue!
+      First issue
+      Resolve Next.js Development Server Failure Caused by Turbopack and SWC Native Binding Issues on Windows
+      Loading
+      Seeing something unexpected? Take a look at the GitHub profile guide.
+
+      2026
+      Footer
+      © 2026 GitHub, Inc.
+      Footer navigation
+      Terms
+      Privacy
+      Security
+      Status
+      Community
+      Docs
+      Contact
+      Manage cookies
+      PinnedLoading
+      IND-Wallet Public
+      IND Wallet is open source wallet apps from which you can done onRampTxns , p2p transfers , merchant app , with fake hdfc banking api &wehbhook (unstable & no security)
+
+      TypeScript
+
+      93 contributions in the last year
+      Skip to contributions year list
+      Contribution Graph
+      Day of Week	SeptemberSep	OctoberOct	NovemberNov	DecemberDec	JanuaryJan	FebruaryFeb	MarchMar	AprilApr	MayMay	JuneJun	JulyJul	AugustAug	SeptemberSep
+      SundaySun
+      MondayMon
+      TuesdayTue
+      WednesdayWed
+      ThursdayThu
+      FridayFri
+      SaturdaySat
+      Learn how we count contributions
+      Less
+      No contributions.
+      Low contributions.
+      Medium-low contributions.
+      Medium-high contributions.
+      High contributions.
+      More
+      Contribution activity
+      September 2026
+      Opened their first issue on GitHub in Ni-then/IND-Wallet Public
+      Sep 14
+      Congratulations on your first issue!
+      First issue
+      Resolve Next.js Development Server Failure Caused by Turbopack and SWC Native Binding Issues on Windows
+      Loading
+      Seeing something unexpected? Take a look at the GitHub profile guide.
+
+      2026
+      Footer
+      © 2026 GitHub, Inc.
+      Footer navigation
+      Terms
+      Privacy
+      Security
+      Status
+      Community
+      Docs
+      Contact
+      Manage cookies
+
     </div>
   )
 }
