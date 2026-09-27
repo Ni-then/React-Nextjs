@@ -7,3 +7,4 @@ Persistent Across Renders: The value stored in useRef persists between component
 No Re-Renders on Change: Changing the value of a ref ( ref.current ) does not cause a component to re-render. This is different from state ( useState ), which triggers a re-render when updated.
 
 props drilling
+rolling up the state
