@@ -18,12 +18,19 @@ function Todo({title,id,setTodo}:TodoType){
   return (
     <div>
         {title}
-        <button onClick={()=>{
+        {/* <button onClick={()=>{
           setTodo(t=>t.filter(x=>x.id != id))
-        }}>Delete</button>
+        }}>Delete</button> */}
+        <DeleteBtn setTodo={setTodo} id = {id}/>
     </div>
   )
-
+}
+function DeleteBtn({setTodo,id}){
+  return <div onClick={()=>{
+    setTodo(t=>t.filter(x=>x.id != id))
+  }}>
+    Delete
+  </div>
 }
 
 export default App
