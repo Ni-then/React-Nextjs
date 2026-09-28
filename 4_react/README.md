@@ -6,6 +6,11 @@ Persistent Across Renders: The value stored in useRef persists between component
 
 No Re-Renders on Change: Changing the value of a ref ( ref.current ) does not cause a component to re-render. This is different from state ( useState ), which triggers a re-render when updated.
 
-props drilling
+props drilling : Prop drilling occurs when you need to pass data from a higher-level component down to a lower-level component that is several layers deep in the component tree. This often leads to the following issues:
+
+Complexity: You may have to pass props through many intermediate components that don't use the props themselves, just to get them to the component that needs them.
+Maintenance: It can make the code harder to maintain, as changes in the props structure require updates in multiple components.
+
+
 rolling up the state
 context api

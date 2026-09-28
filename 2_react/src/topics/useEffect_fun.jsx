@@ -32,9 +32,6 @@ function Render(props) {
             console.log("hi there" + todoId)
         }
 
-        return function () {
-
-        }
     }, [todoId]);
 
     return (
